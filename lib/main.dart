@@ -9,13 +9,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-
+      debugShowCheckedModeBanner: false,
       title: 'Chat App',
       theme: ThemeData(
-
         primarySwatch: Colors.blue,
       ),
-      home: Signup()
+      home: Login()
     );
   }
 }

@@ -1,18 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:chatapp/screens/singup_screen.dart';
-/*Widget login_signup_textformfield(String hText, TextInputType tiType){
-  return TextFormField(
-    keyboardType: tiType,
-    decoration: InputDecoration(
-      hintText: hText,
-      hintStyle: TextStyle(color: Colors.blue),
-      contentPadding: EdgeInsets.all(12),
-    ),
-    style: TextStyle(
-      color: Colors.blue,
-    ),
-  );
-}*/
 
 Card InputFieldCard({IconData icon,TextInputType titype,String htext,MediaQueryData mdata,
   TextEditingController controller,bool obscureval, String validmsg}){
@@ -66,7 +53,7 @@ Container Button(MediaQueryData data, String label){
       color: Colors.blue,
       textColor: Colors.white,
       padding: EdgeInsets.all(8.0),
-      onPressed: () =>signMeUp(),
+      onPressed: () {},
       child: Text(
         label,
         style: TextStyle(
@@ -76,5 +63,4 @@ Container Button(MediaQueryData data, String label){
     ),
   );
 }
-
 

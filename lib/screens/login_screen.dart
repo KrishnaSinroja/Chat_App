@@ -112,6 +112,7 @@ class _LoginState extends State<Login> {
 */
 
 
+import 'package:chatapp/screens/singup_screen.dart';
 import 'package:chatapp/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 
@@ -151,7 +152,38 @@ class _LoginState extends State<Login> {
 
                   Button(data, 'SignIn'),
                   SizedBox(height:20.0),
-                  Button(data,'SignIn with Google')
+                  Button(data,'SignIn with Google'),
+                  SizedBox(height:20.0),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Text(
+                        'Do not Registered yet?',
+                        style: TextStyle(
+                          fontSize: 19.0,
+                          color: Colors.blue,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                      SizedBox(
+                        height:10.0 ,
+                      ),
+                      InkWell(
+                        child: Text(
+                          'Register',
+                          style: TextStyle(
+                              color: Colors.blue,
+                              fontWeight: FontWeight.w800,
+                              fontSize: 19.0,
+                              decoration: TextDecoration.underline
+                          ),
+                        ),
+                        onTap: ()=> Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>Signup())),
+                      ),
+                    ],
+                  ),
+
+
                 ],
               ),
             ),
